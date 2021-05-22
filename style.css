@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to left , #0F6596,#20A89D);
+}
+#logobox{
+    width: 30%;
+    height: 100px;
+    float: right;
+}
+#logo{
+    width:100px ;
+    height: 100px;
+    border-radius: 50%;
+    float: right;
+    padding-right: 5px;
+}
+#logo:hover{
+    animation-name: scale-up-center;
+    animation-duration: 2s;
+}
+#title{
+    line-height: 100px;
+    padding-left: 20px;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+    
+}
+#t1{
+    text-decoration: none;
+
+}
+nav{
+    width:70%;
+    height: 100px;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    line-height:100px ;
+    width: 33%;
+
+}
+ nav a{
+     text-decoration: none;
+     width: 100%;
+     display: inline-block;
+     font-size: 21px;
+     color: black;
+     font-family: 'Nunito', sans-serif;
+ }
+ nav a:hover{
+     background-color: rgb(8, 15, 119);
+     color: white;
+    
+    
+ }
+ main{
+     width: 100%;
+     height: 600px;
+ }
+ article{
+     width: 70%;
+     height: 600px;
+     float: right;
+     animation-name:changebackground ;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+     position: relative;
+
+ }
+ aside{
+     width: 30%;
+     height: 600px;
+     float: left;
+
+ }
+ @keyframes changebackground{
+     10%{
+         background-color:#8ffff9;
+
+     }
+     30%{
+        background-color:#8fdfff;
+
+     }
+     50%{
+        background-color:#6fbbda;
+    }
+     70%{
+        background-color:#4d83f8;
+    }
+     100%{
+        background-color:#4372f5;
+    }
+ }
+ #div1{
+     width: 500px;
+     height: 225px;
+     background-color: rgb(255, 255, 255);
+     position:absolute;
+     left: 50%;
+     top: 50%;
+     border-radius: 20px 20px;
+     transform: translate(-50%, -50%);
+ }
+ #div1 h1{
+     text-align: center;
+     padding: 20px 0px;
+     border-bottom: 3px solid black;
+     margin: 0px 20px;
+     font-family: 'Cabin', sans-serif;
+
+ }
+ 
+
+ #div1 img {
+     width: 50px;
+     height: 50px;
+     margin-left:45% ;
+     margin-top: 9%;
+     object-fit: cover;
+     
+      }
+      #div1 h3{
+          position: absolute;
+          right: 45%;
+          bottom: 17%;
+          font-size: 5px;
+          color: rgb(148, 146, 144);
+      }
+      aside{
+          text-align: center;
+      }
+      aside #css{
+          width: 90%;
+          margin: 20px 20px;
+          border-radius: 20px 10px;
+         
+      }
+      aside h1{
+          text-align: center;
+          border-bottom: 2px solid #5c5cda7d;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          color: rgb(0, 0, 0);
+          
+          
+      }
+      aside a{
+          text-decoration: none;
+          font-family: 'Lora', serif;
+          font-family: 'Nunito', sans-serif;
+      }
+      aside .img{
+          width: 50px;
+          height: 50px;
+          border-bottom: 2px solid black;
+          margin: 0px -2px;
+      }
+      .img:hover{
+          animation-name: bigger;
+          animation-duration: 1s;
+          margin: 0px 2px;
+
+      }
+      @keyframes bigger{
+          from{
+              width: 70px;
+              height: 70px;
+          }
+          to{
+              width: 70px;
+              height: 70px;
+          }
+      }
+      .footer{
+          width: 100%;
+          display: flex;
+          text-align: center;
+          flex-wrap: wrap;
+          flex-direction: row;
+          align-content: center;
+
+          
+      }
+      .box{
+          width: 30%;
+          height: 250px;
+          margin: 20px 20px;
+          border-radius: 20px 20px;
+      }
+      .box img{
+          width: 100%;
+          height: 200px; 
+          border-radius: 20px 20px;
+        }
+     .box a{
+            text-decoration: none;
+            color: rgb(19, 84, 204);
+            font-family: 'Lora', serif;
+            font-family: 'Nunito', sans-serif;
+        }
+        .box h1{
+            margin-top: 10px;
+        }
+        @-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+        @media only screen and (max-width:1221px) {
+            .footer{
+                justify-content: center;
+            }
+            
+        }
+        @media only screen and (max-width:1158px) and (min-width:750px){
+           #logo{
+               width: 83px;
+               height: 83px;
+               
+
+           }
+           nav li{
+               width:30%;
+           }
+           #title{
+               font-size: 18px;
+           }
+           .footer{
+               width: 100%;
+               height: auto;
+           }
+           .box{
+               width: 26%;
+               padding-top: 10px;
+           }
+           
+               
+          
+           
+        }
+        @media only screen and (max-width:750px){
+            #header{
+                height: auto;
+                
+            }
+            
+            #logobox{
+                width: 100%;
+                float: none;
+                height:200px;
+                text-align: center;
+            }
+            #logo ,#title{
+                float: none;
+
+            }
+            nav{
+                width: 100%;
+            }
+            nav li{
+                width: 30%;
+            }
+            main{
+                height: auto;
+            }
+            aside{
+                width: 100%;
+                float: none;
+                height: auto;
+               
+            }
+            article{
+                width: 100%;
+                float: none;
+                height: 300px;
+            }
+            .box{
+                width: 100%;
+            }
+            #div1{
+                width: 100%;
+            }
+            
+        }
+
+      
+      
